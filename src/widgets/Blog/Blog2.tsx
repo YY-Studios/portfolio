@@ -1,20 +1,16 @@
 import { BLOGS } from "../../shared/constans/blogData";
-import BlogCard from "../../shared/ui/Blog/BlogCard";
+import BlogCard2 from "../../shared/ui/Blog/BlogCard2";
 
-export default function Blog() {
+export default function Blog2() {
   return (
     <section id="blog" className="w-full">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         {/* 섹션 헤더 */}
         <div className="mb-8 md:mb-10 flex items-end justify-between gap-4">
           <div>
-            <p className="text-sm md:text-base text-zinc-400">Writing</p>
             <h2 className="mt-2 text-3xl md:text-5xl font-semibold tracking-tight text-zinc-900">
               Blog
             </h2>
-            <p className="mt-3 text-sm md:text-base text-zinc-500">
-              벨로그에 작성한 기술 글 중 최근 글 3개를 보여줍니다.
-            </p>
           </div>
 
           {/* 전체 벨로그 링크 */}
@@ -45,7 +41,7 @@ export default function Blog() {
         {/* 카드 리스트 (스크린샷처럼 세로 스택) */}
         <div className="grid grid-cols-1 gap-6  lg:grid-cols-3">
           {BLOGS.slice(0, 3).map((blog) => (
-            <BlogCard key={blog.id} blog={blog} />
+            <BlogCard2 key={blog.id} blog={blog} />
           ))}
         </div>
 

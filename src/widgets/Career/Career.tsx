@@ -1,19 +1,21 @@
 import { CAREER_DATA } from "../../shared/constans/careerData";
 import { CareerItem } from "../../shared/ui/Career/CareerItem";
+import Title from "@/shared/ui/Title/Title";
 
 const Career = () => {
   return (
-    <section className="min-h-screen bg-white px-6 py-32">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-semibold tracking-tight text-black mb-24 text-center">
-          경력사항
-        </h2>
+    <section className="section">
+      {/* 타이틀 */}
+      <Title
+        title="업무 경험"
+        description="실무 · 운영 · 퍼블리싱 · 프론트엔드 개발 경험"
+      />
 
-        <div className="space-y-20">
-          {CAREER_DATA.map((item, index) => (
-            <CareerItem key={index} item={item} />
-          ))}
-        </div>
+      {/* 리스트 */}
+      <div className="space-y-5">
+        {CAREER_DATA.map((item) => (
+          <CareerItem key={`${item.title}-${item.period}`} item={item} />
+        ))}
       </div>
     </section>
   );

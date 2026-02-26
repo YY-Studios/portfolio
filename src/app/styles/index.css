@@ -44,6 +44,14 @@
   animation: fadeUp 0.8s ease forwards;
 }
 
+.section {
+  @apply w-full mx-auto py-10 md:py-16 px-5 md:px-20 lg:px-40;
+}
+
 .sction-title {
   @apply text-2xl font-bold mb-6 ;
+}
+
+button {
+  @apply cursor-pointer
 }

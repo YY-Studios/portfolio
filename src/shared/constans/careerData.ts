@@ -4,7 +4,6 @@ export const CAREER_DATA = [
     organization: "글로벌 Company, 소프트웨어개발 Cell",
     subTitle: "리액트 기반 UI 컴포넌트 설계 및 퍼블리싱 (프리랜서)",
     period: "2025.08 ~ 2025.12",
-    hideLabel: "주요 업무 내용 가리기",
     description: [
       {
         item: ["디자인을 리액트 컴포넌트 단위로 구조화하여 재사용성 향상"],
@@ -16,7 +15,6 @@ export const CAREER_DATA = [
     organization: "글로벌 Company, 소프트웨어개발 Cell",
     subTitle: "개인뱅킹 및 마이브랜치 UI/UX 운영",
     period: "2021.11 ~ 2025.04",
-    hideLabel: "주요 업무 내용 가리기",
     description: [
       {
         item: [

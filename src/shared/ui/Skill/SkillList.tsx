@@ -17,7 +17,7 @@ interface SkillListProps {
 
 const SkillList = ({ activeCategory }: SkillListProps) => {
   return (
-    <div className="grid grid-cols-4 md:grid-cols-6 gap-6">
+    <div className="grid grid-cols-4 md:grid-cols-6 gap-3 md:gap-6">
       {SKILL_DATA.map((item) => (
         <SkillBadge
           key={item.id}

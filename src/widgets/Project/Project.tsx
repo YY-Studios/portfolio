@@ -1,8 +1,12 @@
 import CardList from "../../shared/ui/Card/CardList";
+import Title from "@/shared/ui/Title/Title";
 const Project = () => {
   return (
-    <section className="flex flex-col items-center justify-center py-16 px-6 bg-white">
-      <h2 className="text-2xl font-bold mb-10">프로젝트</h2>
+    <section className="section">
+      <Title
+        title="프로젝트"
+        description="실무 · 운영 · 퍼블리싱 · 프론트엔드 개발 경험"
+      />
       <CardList />
     </section>
   );
